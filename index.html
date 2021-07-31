@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopee</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/font/fontawesome-free-5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/grid-system.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/main.css">
@@ -28,7 +28,16 @@
                     <a href="" class="nav__become-shop separate-after">Trở thành Người Bán Shopee</a>
                 </li>
                 <li>
-                    <a href="" class="nav__download separate-after">Tải ứng dụng</a>
+                    <div class="nav__download separate-after">
+                        <a href="" >Tải ứng dụng</a>
+                        <div class="download-app has-bridge">
+                            <img src="./assets/img/downloadQR.png" alt="" class="download-app__QR">
+                            <div class="download-app__store">
+                                <img src="./assets/img/appstore.png" alt="" class="download-app__appstore">
+                                <img src="./assets/img/googleplay.png" alt="" class="download-app__ggplay">
+                            </div>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <div class="nav__social">
@@ -43,6 +52,8 @@
                     <div class="nav__notify">
                         <i class="far fa-bell"></i>
                         Thông Báo
+                        <!-- <img src="./assets/img/notifyNotRegister.png" alt="">
+                        <div class="btn btn--normal"></div> -->
                     </div>
                 </li>
                 <li>
@@ -73,12 +84,23 @@
                     </g>
                 </svg>
             </div>
-            <div class="header__search-bar ">
-                <input type="text" placeholder="Tìm trên Shopee" class="search-bar__input">
-                <div class="btn primary-btn search-bar__btn">
-                    <i class="fas fa-search"></i>
+            <div class="header__search-area">
+                <div class="header__search-bar ">
+                    <input type="text" placeholder="Tìm trên Shopee" class="search-bar__input">
+                    <div class="btn btn--primary search-bar__btn">
+                        <i class="fas fa-search"></i>
+                    </div>
                 </div>
-
+                <ul class="header__minicategory">
+                    <li><a href="">Váy</a></li>
+                    <li><a href="">Áo Phông</a></li>
+                    <li><a href="">Quần</a></li>
+                    <li><a href="">Bông tẩy trang</a></li>
+                    <li><a href="">Balo</a></li>
+                    <li><a href="">Dép</a></li>
+                    <li><a href="">Khẩu trang</a></li>
+                    <li><a href="">Bánh tráng</a></li>
+                </ul>
             </div>
             <div class="header__cart">
                 <i class="fas fa-shopping-cart"></i>

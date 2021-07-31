@@ -21,7 +21,7 @@ html {
     height: var(--nav-height);
     color: var(--white-color);
     font-size: 1.4rem;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 #nav a {
@@ -56,8 +56,42 @@ html {
 }
 
 .nav__download {
-
+    position: relative;
 }
+
+.nav__download:hover .download-app {
+    display: flex;
+}
+
+.download-app {
+    position: absolute;
+    display: none;
+    margin-top: 8px;
+    width: 190px;
+    background-color: var(--white-color);
+    z-index: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.download-app__QR {
+    width: 100%;
+}
+
+.download-app__store {
+    display: flex;
+    justify-content: center;
+}
+
+.download-app__appstore {
+    width: 40%;
+}
+
+.download-app__ggplay {
+    width: 40%;
+    margin-left: 8px;
+}
+
 
 .nav__social {
     display: flex;
@@ -113,26 +147,28 @@ html {
     width: 150px;
 }
 
-.header__search-bar {
-    display: flex;
+.header__search-area {
     flex: 1;
+}
+
+.header__search-bar {
+    margin-top: 8px;
+    display: flex;
     height: 40px;
     background-color: var(--white-color);
-    border-radius: 2px;
+    border-radius: 3px;
 }
 
 .search-bar__input {
     height: 100%;
     flex: 1;
     border: none;
-    border-radius: 2px;
+    outline: none;
+    border-radius: 3px;
     padding-left: 16px;
     font-size: 1.4rem;
-}
-
-.search-bar__input:focus {
-    border: none;
-}
+    color: var(--text-color);
+}   
 
 .search-bar__btn {
     width: 62px;
@@ -150,3 +186,16 @@ html {
     cursor: pointer;
 }
 
+.header__minicategory {
+    display: flex;
+    list-style-type: none;
+    margin-top: 4px;
+}
+
+.header__minicategory a {
+    margin-right: 16px;
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
