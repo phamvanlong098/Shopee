@@ -5,6 +5,148 @@
 }
 
 html {
-    font-size: 10px;
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+#header {
+    background-image: linear-gradient( #f53d2d,#fe6532);
+    height: var(--header-height);
+}
+
+#nav {
+    display: flex;
+    justify-content: space-between;
+    height: var(--nav-height);
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+#nav a {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+#nav ul {
+    display: flex;
+    margin-top: 10px;
+}
+
+#nav li {
+    list-style: none;
+}
+
+#nav a:hover{
+    opacity: 0.8;
+}
+
+.nav__for-shop {
+    
+}
+
+.nav__shop-channel {
+
+}
+
+
+.nav__become-shop {
+
+}
+
+.nav__download {
+
+}
+
+.nav__social {
+    display: flex;
+}
+
+.nav__social a {
+    margin-left: 8px;
+    margin-top: -2px;
+    font-size: 1.6rem;
+}
+
+.nav__notify {
+    margin-right: 16px;
+}
+
+.nav__notify:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.nav__help {
+    margin-right: 16px;
+}
+.nav__help:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.nav__register {
+    display: flex;
+}
+
+.sign-up {
+    
+}
+
+.sign-in {
+
+}
+
+.header-with-search {
+    height: var(--header-with-search-height);
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+   width: 200px;
+   cursor: pointer;
+}
+
+.header__logo-img {
+    width: 150px;
+}
+
+.header__search-bar {
+    display: flex;
+    flex: 1;
+    height: 40px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+}
+
+.search-bar__input {
+    height: 100%;
+    flex: 1;
+    border: none;
+    border-radius: 2px;
+    padding-left: 16px;
+    font-size: 1.4rem;
+}
+
+.search-bar__input:focus {
+    border: none;
+}
+
+.search-bar__btn {
+    width: 62px;
+    height: 34px;
+    margin: auto;
+    margin-right: 3px;
+}
+
+.header__cart {
+    display: flex;
+    width: 160px;
+    color: var(--white-color);
+    font-size: 2rem;
+    justify-content: center;   
+    cursor: pointer;
 }
 
