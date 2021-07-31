@@ -27,6 +27,8 @@ html {
 #nav a {
     text-decoration: none;
     color: var(--white-color);
+    padding: 4px 0px;
+    margin-top: -4px;
 }
 
 #nav ul {
@@ -72,6 +74,7 @@ html {
     z-index: 1;
     align-items: center;
     flex-direction: column;
+    animation: fadeIn linear 0.1s;
 }
 
 .download-app__QR {
@@ -97,17 +100,75 @@ html {
     display: flex;
 }
 
-.nav__social a {
+#nav .nav__social a {
     margin-left: 8px;
-    margin-top: -2px;
+    margin-top: -6px;
     font-size: 1.6rem;
 }
 
 .nav__notify {
-    margin-right: 16px;
+    margin-right: 8px;
+    padding: 8px 8px;
+    margin-top: -8px;
+    position: relative;
+    cursor: pointer;
+    
 }
 
-.nav__notify:hover{
+
+.nav__notify:hover .nav__notify-area {
+    display: block;
+}
+
+.nav__notify-area {
+    position: absolute;
+    display: none;
+    width: 400px;
+    height: 340px;
+    background-color: var(--white-color);
+    right: 0;
+    /* top: 100%; */
+    border: solid 1px #ccc  ;
+    margin-top: var(--margin-popup);
+    animation: growthScale linear 0.1s;
+    transform-origin: top right;
+}
+
+.notify-not-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notify-not-register__img {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.notify-not-register__img img {
+    width: 100px;
+    margin-bottom: 32px;
+}
+
+.notify-not-register__text {
+    color: var(--text-color);
+}
+
+.notify-not-register__register {
+    display: flex;
+    width: 100%;
+}
+
+.notify-not-register__register .btn{
+    width: 50%;
+    height: 40px;
+}
+
+.nav__notify:hover i{
     cursor: pointer;
     opacity: 0.8;
 }
@@ -115,7 +176,7 @@ html {
 .nav__help {
     margin-right: 16px;
 }
-.nav__help:hover{
+.nav__help:hover i{
     cursor: pointer;
     opacity: 0.8;
 }
